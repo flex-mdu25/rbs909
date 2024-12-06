@@ -16,7 +16,7 @@
 
     <script>
       window.onload = function() {
-        liff.init({ liffId: "2006590629-3a560AJm" })
+        liff.init({ liffId: "2006590629-BELPmlnW" })
           .then(() => {
             if (liff.isLoggedIn()) {
               dolink();
@@ -38,7 +38,7 @@
       }
 
       async function fetchDataFromGoogleSheet(id) {
-        const url = `https://script.google.com/macros/s/AKfycbwln47h4_1MQ7_ncXd9D68Yj4egWg_2UBYb_eqRGv5eiiB5YbRwLTEREcGBK6aiFPKS/exec?id=${id}`;
+        const url = `https://script.google.com/macros/s/AKfycbzrWYSBfMDLt8VbPU5m8ykXYBgVMnfUCzgO-Dpblsyt17ycTWudYFPgxpLIiQaMWeB8/exec?id=${id}`;
         const response = await fetch(url);
         const data = await response.json();
         return data;
