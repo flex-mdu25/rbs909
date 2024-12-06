@@ -70,9 +70,9 @@
     "contents": [
       {
         "type": "image",
-        "url": "https://mdu25.cfd/flex/img/bn-mdu25-2.jpg",
+        "url": "https://raw.githubusercontent.com/flex-mdu25/rbs909/refs/heads/main/head-909.png",
         "size": "full",
-        "aspectRatio": "1040:150",
+        "aspectRatio": "1040:200",
         "align": "center",
         "gravity": "center",
         "aspectMode": "cover",
@@ -142,7 +142,7 @@
                     "type": "text",
                     "text": data.description,
                     "wrap": true,
-                    "size": "sm"
+                    "size": "md"
                   }
                 ],
                 "paddingAll": "md",
@@ -238,71 +238,45 @@
             "contents": [
               {
                 "type": "box",
-                "layout": "baseline",
+                "layout": "vertical",
                 "contents": [
                   {
-                    "type": "icon",
-                    "url": "https://flex-mdu25.github.io/Pr25/img/ic_facebook.png",
-                    "size": "4xl",
-                    "margin": "none",
-                    "offsetStart": "xxl",
-                    "offsetEnd": "none",
-                    "offsetBottom": "none",
-                    "offsetTop": "xs"
+                    "type": "image",
+                    "url": "https://flex-mdu25.github.io/Pr25/img/read.png",
+                    "size": "full",
+                    "aspectRatio": "10:4",
+                    "action": {
+                      "type": "uri",
+                      "label": "อ้านเพิ่มเติม",
+                      "uri": data.newsfblink
+                    }
                   }
-                ],
-                "borderWidth": "normal",
-                "width": "33%",
-                "action": {
-                  "type": "uri",
-                  "label": "FB",
-                  "uri": data.fblink
-                },
-                "justifyContent": "center"
+                ]
               },
               {
                 "type": "box",
-                "layout": "baseline",
-                "contents": [
-                  {
-                    "type": "icon",
-                    "url": "https://flex-mdu25.github.io/Pr25/img/ic_tiktok.png",
-                    "size": "4xl",
-                    "offsetTop": "xs"
-                  }
-                ],
-                "width": "33%",
-                "action": {
-                  "type": "uri",
-                  "label": "Tiktok",
-                  "uri": data.tklink
-                },
-                "justifyContent": "center"
+                "layout": "vertical",
+                "contents": [],
+                "width": "5%"
               },
               {
                 "type": "box",
-                "layout": "baseline",
+                "layout": "vertical",
                 "contents": [
                   {
-                    "type": "icon",
-                    "url": "https://flex-mdu25.github.io/Pr25/img/ic_website.png",
-                    "size": "4xl",
-                    "offsetTop": "xs",
-                    "offsetEnd": "xl"
+                    "type": "image",
+                    "url": "https://flex-mdu25.github.io/Pr25/img/share2.png",
+                    "size": "full",
+                    "aspectRatio": "10:4",
+                    "action": {
+                      "type": "uri",
+                      "label": "คลิกเพื่อแชร์",
+                      "uri": data.liffshare
+                    }
                   }
-                ],
-                "width": "33%",
-                "action": {
-                  "type": "uri",
-                  "label": "Website",
-                  "uri": data.weblink
-                },
-                "justifyContent": "center"
+                ]
               }
-            ],
-            "paddingTop": "xs",
-            "paddingEnd": "xs",
-            "offsetTop": "xs"
+            ]
           }
         ],
         "backgroundColor": "#ffffff",
@@ -319,8 +293,8 @@
     "background": {
       "type": "linearGradient",
       "angle": "0deg",
-      "startColor": "#530573",
-      "endColor": "#1f0135"
+      "startColor": "#baedff",
+      "endColor": "#1dc2eb"
     }
   },
   "body": {
@@ -329,46 +303,92 @@
     "contents": [
       {
         "type": "box",
-        "layout": "vertical",
+        "layout": "baseline",
         "contents": [
           {
-            "type": "image",
-            "url": "https://flex-mdu25.github.io/Pr25/img/read.png",
-            "size": "full",
-            "aspectRatio": "10:4",
-            "action": {
-              "type": "uri",
-              "label": "อ่านเพิ่มเติม",
-              "uri": data.newsfblink
-            }
+            "type": "icon",
+            "url": "https://flex-mdu25.github.io/Pr25/img/ic_facebook.png",
+            "size": "4xl",
+            "offsetTop": "xs",
+            "offsetBottom": "none",
+            "offsetStart": "xxl",
+            "offsetEnd": "none"
           }
-        ]
+        ],
+        "width": "27%",
+        "borderWidth": "normal",
+        "justifyContent": "center",
+        "action": {
+          "type": "uri",
+          "label": "Facebook",
+          "uri": data.fblink
+        }
       },
       {
         "type": "box",
-        "layout": "vertical",
-        "contents": [],
-        "width": "5%"
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "icon",
+            "url": "https://flex-mdu25.github.io/Pr25/img/ic_tiktok.png",
+            "size": "4xl",
+            "offsetTop": "xs",
+            "offsetBottom": "none",
+            "offsetStart": "sm"
+          }
+        ],
+        "width": "22%",
+        "justifyContent": "center",
+        "action": {
+          "type": "uri",
+          "label": "Tiktok",
+          "uri": data.tklink
+        }
       },
       {
         "type": "box",
-        "layout": "vertical",
+        "layout": "baseline",
         "contents": [
           {
-            "type": "image",
-            "url": "https://flex-mdu25.github.io/Pr25/img/share2.png",
-            "size": "full",
-            "aspectRatio": "10:4",
-            "action": {
-              "type": "uri",
-              "label": "คลิกเพื่อแชร์",
-              "uri": data.liffshare
-            }
+            "type": "icon",
+            "url": "https://raw.githubusercontent.com/flex-mdu25/rbs909/refs/heads/main/radio-icon.png",
+            "size": "4xl",
+            "offsetTop": "xs",
+            "offsetEnd": "xs"
           }
-        ]
+        ],
+        "justifyContent": "center",
+        "width": "18%",
+        "paddingStart": "sm",
+        "action": {
+          "type": "uri",
+          "label": "Radio",
+          "uri": data.newsweblink
+        }
+      },
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "icon",
+            "url": "https://flex-mdu25.github.io/Pr25/img/ic_website.png",
+            "size": "4xl",
+            "offsetTop": "xs",
+            "offsetEnd": "xxl"
+          }
+        ],
+        "justifyContent": "center",
+        "width": "27%",
+        "action": {
+          "type": "uri",
+          "label": "Website",
+          "uri": data.weblink
+        },
+        "paddingStart": "xl"
       }
     ],
-    "backgroundColor": "#530573",
+    "backgroundColor": "#baedff",
     "offsetTop": "xs",
     "paddingTop": "1px",
     "paddingEnd": "lg",
@@ -380,20 +400,21 @@
     "contents": [
       {
         "type": "image",
-        "url": "https://flex-mdu25.github.io/Pr25/img/ft-radio1.jpg",
+        "url": "https://raw.githubusercontent.com/flex-mdu25/rbs909/refs/heads/main/foot909-0.png",
         "size": "full",
-        "aspectRatio": "160:10",
+        "aspectRatio": "1040:130",
         "aspectMode": "cover"
       }
     ],
-    "paddingAll": "none"
+    "paddingAll": "none",
+    "borderWidth": "normal"
   },
   "styles": {
     "hero": {
       "backgroundColor": "#d6ebf5"
     },
     "body": {
-      "backgroundColor": "#530573"
+      "backgroundColor": "#baedff"
     },
     "footer": {
       "backgroundColor": "#ffffff"
